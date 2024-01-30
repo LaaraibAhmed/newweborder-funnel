@@ -26,25 +26,26 @@ const ContactUs = ({ data }: { data: TDictionary }) => {
 
   };
 
-  emailjs.send("service_x8xzlm3","template_za2tq2b", templateParams, "ggiJhlkvIWbcV1sQI")
-    .then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-      },
-      function (err) {
-        console.log("FAILED...", err);
-      }
-    );
-
 
   const router = useRouter();
 
-  const handleInputChange = (value: string) => {
-    console.log(value);
+  const handleInputChange = (e) => {
+    const email = e.target.value;
+    setEmail(email);
   };
 
   const handleSubmit = async () => {
-    console.log('send email');
+    e.preventDefault();
+    emailjs.send("service_x8xzlm3", "template_za2tq2b", templateParams, "ggiJhlkvIWbcV1sQI")
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (err) {
+          console.log("FAILED...", err);
+        }
+      );
+    setEmail("");
   };
 
   return (

@@ -6,7 +6,7 @@ import {Disclosure} from '@headlessui/react';
 import Button from '@/components/widgets/Button';
 import { useRouter } from 'next/navigation';
 import { RiMenuFill, RiCloseLine } from 'react-icons/ri';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { TDictionary } from '@/app/[[...lang]]/dictionaries';
 
 function classNames(...classes: string[]) {
@@ -46,7 +46,7 @@ const Navbar = ({data} : {data: TDictionary}) => {
               <div className="hidden ml-6 lg:ml-0 lg:block flex-auto">
                 <div className="flex gap-4 justify-center items-center">
                   {data.navbar.links.map((item) => (
-                    <Link key={item.name} href={item.href}>
+                    <a key={item.name} href={item.href}>
                       <p className={classNames(
                         'text-sm font-medium tracking-[0.00438rem] px-3 py-2 hover:text-[#22D3EE] hover:bg-cyan-950/40 transition-all	transition-duration: 150ms rounded-xl',
                         item.name ? 'text-[#F3F4F6]' : 'text-[#22D3EE] underline'
@@ -54,7 +54,7 @@ const Navbar = ({data} : {data: TDictionary}) => {
                       aria-current={item.name ? 'page' : undefined}>
                         {item.name}
                       </p>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>

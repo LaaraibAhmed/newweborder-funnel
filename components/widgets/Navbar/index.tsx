@@ -17,7 +17,10 @@ const Navbar = ({data} : {data: TDictionary}) => {
   const router = useRouter();
 
   return (
+    <>
+    <a id="top"></a>
     <Disclosure as="nav" className="bg-transparent lg:flex">
+      
       {({ open }) => (
         <>
           <div className="mx-auto max-w-5xl w-full px-2 lg:px-0">
@@ -88,6 +91,7 @@ const Navbar = ({data} : {data: TDictionary}) => {
         </>
       )}
     </Disclosure>
+    </>
   );
 };
 

@@ -54,7 +54,7 @@ const Footer = ({ data }: { data: TDictionary }) => {
           (
 
 
-            < Link key={item.name} href="/"
+            < Link key={item.name} href={item.href}
               //  className = {
               // classNames(
               //   item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2',

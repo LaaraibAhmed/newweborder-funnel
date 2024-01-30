@@ -261,7 +261,7 @@
   },
   "footerSection": {
     "links": [
-      {"name": "Back to Top", "href": "/"}
+      {"name": "Back to Top", "href": "#top"}
     ],
     "copyRight": "© 2023 by VIAYZE."
   }

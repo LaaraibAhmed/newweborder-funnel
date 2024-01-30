@@ -70,7 +70,7 @@ const ClientReviews = ({data} : {data: TDictionary}) => {
         </InfiniteCarousel>
         <motion.div variants={item}>
           <a href={process.env.CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer" >
-            <Button shape='filled' size='default' width={124.96}>{data.clientReviewsSection.buttonText}</Button>
+            <Button shape='filled' size='default' width={192}>{data.clientReviewsSection.buttonText}</Button>
           </a>
         </motion.div>
       </motion.div>

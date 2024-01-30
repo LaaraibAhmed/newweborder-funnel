@@ -8,7 +8,7 @@ interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> 
 
 const Input = ({ className, onChange, ...rest }: Props) => {
   const rootClassName = cn(
-    'font-roboto flex w-[12.4rem] lg:w-[22.1rem] h-10 flex-col justify-center items-center p-3 rounded-lg bg-[#0833441a] border border-[#374151] text-[#ECEDEE] placeholder:text-[#9CA3AF] tracking-[0.00469rem] outline-none focus:ring-0 focus:outline-none focus:border-[#9CA3AF]',
+    'flex w-[12.4rem] lg:w-[22.1rem] h-10 flex-col justify-center items-center p-3 rounded-lg bg-[#0833441a] border border-[#374151] text-[#ECEDEE] placeholder:text-[#9CA3AF] tracking-[0.00469rem] outline-none focus:ring-0 focus:outline-none focus:border-[#9CA3AF]',
     className
   );
 

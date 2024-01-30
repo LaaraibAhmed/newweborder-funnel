@@ -1,5 +1,5 @@
 .root {
-  @apply cursor-pointer inline-flex px-2.5 tracking-[0.00438rem] font-medium transition ease-in-out duration-150 shadow-sm text-center justify-center items-center;
+  @apply cursor-pointer inline-flex px-2.5 tracking-[0.00438rem] font-semibold transition ease-in-out duration-150 shadow-sm text-center justify-center items-center;
 }
 
 /********** SIZE **********/
@@ -9,7 +9,7 @@
 }
 
 .root[data-size='default'] {
-  @apply text-[0.9375rem] h-10 rounded-xl pt-[1px];
+  @apply text-[0.9375rem] h-12 rounded-xl pt-[1px];
 }
 
 

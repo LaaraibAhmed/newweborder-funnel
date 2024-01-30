@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",

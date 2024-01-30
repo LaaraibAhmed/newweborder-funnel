@@ -1,9 +1,9 @@
 {
   "navbar": {
     "links": [
-      { "name": "Features", "href": "/#features" },
-      { "name": "Pricing", "href": "/#pricing" },
-      { "name": "Our Process", "href": "/#our-process" }
+      { "name": "Features", "href": "#features" },
+      { "name": "Pricing", "href": "#pricing" },
+      { "name": "Our Process", "href": "#our-process" }
     ],
     "buttonText": "Get Started"
   },
@@ -233,7 +233,7 @@
         "testimony": "The insights provided by Viayze's AI tools have been invaluable. Our marketing strategies are now more data-driven and effective, leading to higher engagement rates."
       }
     ],
-    "buttonText": "Get Started"
+    "buttonText": "Schedule A Demo"
   },
   "contactUsSection": {
     "contactInformation": {
@@ -242,8 +242,8 @@
       "emailAddress": "management@viayze.com"
     },
     "SocialMediaLinks": [
-      {"name": "instagram", "href": "/"},
-      {"name": "twitter", "href": "/"},
+      {"name": "instagram", "href": "https://www.instagram.com/viayze"},
+      {"name": "twitter", "href": "https://twitter.com/viayze"},
       {"name": "facebook", "href": "/"},
       {"name": "linkedin", "href": "/"},
       {"name": "youtube", "href": "/"}
@@ -261,9 +261,7 @@
   },
   "footerSection": {
     "links": [
-      {"name": "Back to Top", "href": "/"},
-      {"name": "Privacy Policy", "href": "/"},
-      {"name": "Terms of Service", "href": "/"}
+      {"name": "Back to Top", "href": "/"}
     ],
     "copyRight": "© 2023 by VIAYZE. All rights are reserved."
   }

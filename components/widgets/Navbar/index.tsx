@@ -45,7 +45,7 @@ const Navbar = ({data} : {data: TDictionary}) => {
                   {data.navbar.links.map((item) => (
                     <Link key={item.name} href={item.href}>
                       <p className={classNames(
-                        'text-sm font-medium tracking-[0.00438rem] p-3 hover:text-[#22D3EE] hover:underline',
+                        'text-sm font-medium tracking-[0.00438rem] px-3 py-2 hover:text-[#22D3EE] hover:bg-cyan-950/40 transition-all	transition-duration: 150ms rounded-xl',
                         item.name ? 'text-[#F3F4F6]' : 'text-[#22D3EE] underline'
                       )}
                       aria-current={item.name ? 'page' : undefined}>
@@ -58,7 +58,7 @@ const Navbar = ({data} : {data: TDictionary}) => {
               <div className="absolute inset-y-0 right-0 items-center pr-2 lg:static lg:inset-auto lg:ml-0 lg:pr-0 flex-1 justify-end hidden lg:flex">
                 {(
                   <a href={process.env.CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    <Button shape='surface' size='small' width={118.4} > {data.navbar.buttonText} </Button>
+                    <Button shape='filled' size='small' width={118.4} > {data.navbar.buttonText} </Button>
                   </a>
                 )}
               </div>

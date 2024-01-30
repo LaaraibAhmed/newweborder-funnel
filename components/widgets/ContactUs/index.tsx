@@ -1,6 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 import Logo from '@/components/widgets/Logo';
 import { useRouter } from 'next/navigation';
 import { TDictionary } from '@/app/[[...lang]]/dictionaries';
@@ -10,7 +12,31 @@ import Input from '../Input';
 import Button from '../Button';
 import Link from 'next/link';
 
-const ContactUs = ({data} : {data: TDictionary}) => {
+const ContactUs = ({ data }: { data: TDictionary }) => {
+
+
+
+  const [email, setEmail] = useState("");
+
+
+
+  var templateParams = {
+
+    email: email,
+
+  };
+
+  emailjs.send("service_x8xzlm3","template_za2tq2b", templateParams, "ggiJhlkvIWbcV1sQI")
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (err) {
+        console.log("FAILED...", err);
+      }
+    );
+
+
   const router = useRouter();
 
   const handleInputChange = (value: string) => {
@@ -54,7 +80,7 @@ const ContactUs = ({data} : {data: TDictionary}) => {
         <p className='text-[#F3F4F6] font-roboto'>{data.contactUsSection.subscriptionNotice.callToAction}</p>
         <div className='flex flex-col gap-4'>
           <div className='flex items-center gap-2'>
-            <Input onChange={handleInputChange} placeholder={data.contactUsSection.subscriptionNotice.inputText} type='email'/>
+            <Input onChange={handleInputChange} placeholder={data.contactUsSection.subscriptionNotice.inputText} type='email' />
             <Button shape='surface' size='default' width={115.04} onClick={handleSubmit}>
               {data.contactUsSection.subscriptionNotice.buttonText}
             </Button>

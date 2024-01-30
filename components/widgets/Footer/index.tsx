@@ -51,7 +51,7 @@ const Footer = ({data} : {data: TDictionary}) => {
         </p>
         <div className="flex gap-6 justify-center items-center">
           {data.footerSection.links.map((item) => (
-            <Link key={item.name} href={item.href}>
+            <Link key={item.name} href="/">
               <p className={classNames(
                 'text-xs lg:text-sm font-medium tracking-[0.00438rem]',
                 item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2'

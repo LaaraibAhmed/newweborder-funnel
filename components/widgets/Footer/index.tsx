@@ -53,8 +53,8 @@ const Footer = ({data} : {data: TDictionary}) => {
           {data.footerSection.links.map((item) => (
             <Link key={item.name} href="/">
               <p className={classNames(
-                'text-xs lg:text-sm font-medium tracking-[0.00438rem]',
-                item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2'
+                item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2',
+                'text-xs lg:text-sm font-medium tracking-[0.00438rem]'
               )}
               aria-current={item.name ? 'page' : undefined}>
                 {item.name}

@@ -75,7 +75,8 @@ const WelcomeBanner = ({ data }: { data: TDictionary }) => {
          
               )}
               <ReactPlayer
-                url="http://www.youtube.com/watch?v=svIafaRgXnc"
+                // url="http://www.youtube.com/watch?v=svIafaRgXnc"
+                url={process.env.NEXT_PUBLIC_YOUTUBE_VIDEO_LINK}
                 className={styles.responsive_player}
                 controls={true}
                 onReady={() => setIsVideoLoaded(true)}

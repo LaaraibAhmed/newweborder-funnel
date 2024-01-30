@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { TDictionary } from '@/app/[[...lang]]/dictionaries';
 import ContactUs from '../ContactUs';
 import { motion } from 'framer-motion';
@@ -54,7 +54,7 @@ const Footer = ({ data }: { data: TDictionary }) => {
           (
 
 
-            < Link key={item.name} href={item.href}
+            < a key={item.name} href={item.href}
               //  className = {
               // classNames(
               //   item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2',
@@ -65,7 +65,7 @@ const Footer = ({ data }: { data: TDictionary }) => {
               >
               {item.name}
               {/* </p> */}
-            </Link>
+            </a>
           ))}
         </div>
       </motion.div>

@@ -75,9 +75,9 @@ const DataAnalysis = ({ data }: { data: TDictionary }) => {
           </div>
           <p className='text-[#D1D5DB] font-medium text-sm lg:text-base tracking-[0.007rem]' >{data.analysisSection.description}</p>
           <motion.div variants={item} className='mt-4 lg:mt-0'>
-            <a href='#pricing'>
-              <Button shape='surface' size='default' width={204.8}>{data.analysisSection.buttonText}</Button>
-            </a>
+          <a href={process.env.CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer" >
+            <Button shape='filled' size='default' width={192}>Get Started</Button>
+          </a>
           </motion.div>
         </motion.div>
       </motion.div>

@@ -51,13 +51,13 @@ const WelcomeBanner = ({ data }: { data: TDictionary }) => {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <motion.div className='lg:max-w-[48rem] mx-auto flex flex-col gap-4 px-2 lg:px-0' variants={item}>
+          <motion.div className='lg:max-w-[48rem] mx-auto flex flex-col gap-4 px-2 lg:px-0 items-center' variants={item}>
             <h1 className="font-semibold text-[#F3F4F6] text-2xl lg:text-5xl !leading-tight tracking-[0.0075rem] lg:tracking-[0.015rem]">
               <span>{data.heroSection.heading[0]}</span>
               <span className="text-[#22D3EE]"> {data.heroSection.heading[1]} </span>
 
             </h1>
-            <p className="text-[#D1D5DB]  text-sm lg:text-lg">
+            <p className="text-[#D1D5DB]  text-sm lg:text-lg max-w-screen-sm">
               {data.heroSection.subheading}
             </p>
           </motion.div>

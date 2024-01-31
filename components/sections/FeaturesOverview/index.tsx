@@ -51,11 +51,11 @@ const FeaturesOverview = ({ data }: { data: TDictionary }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
-      id="features"
+      id="solutions"
     >
       <motion.div className='flex flex-col gap-3 px-2 lg:px-0'  variants={item}>
         <div className='flex justify-center w-full'>
-          <Badge text='Features' className='bg-gradient-to-t from-[#022c2299] to-[#022c2200] border border-[#022C22] rounded-full text-[#10B981]'/>
+          <Badge text='Solutions' className='bg-gradient-to-t from-[#022c2299] to-[#022c2200] border border-[#022C22] rounded-full text-[#10B981]'/>
         </div>
         <h2 className="max-w-[44rem] mx-auto font-semibold text-[#F3F4F6] text-2xl lg:text-5xl tracking-[0.00625rem] lg:tracking-[0.015rem]" >
           <span>{data.featuresSection.heading[0]}</span>

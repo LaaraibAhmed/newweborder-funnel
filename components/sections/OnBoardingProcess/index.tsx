@@ -80,8 +80,8 @@ const OnBoardingProcess = ({data} : {data: TDictionary}) => {
             <Badge text='Our Process' className='bg-gradient-to-t from-[#3b076499] to-[#3b076400] border border-[#3B0764] rounded-full text-[#A855F7]'/>
           </motion.div>
           <motion.h2 className="font-semibold text-[#F3F4F6] text-xl lg:text-5xl tracking-[0.00625rem] lg:tracking-[0.015rem]">
-            <span>{data.onBoardingSection.heading[0]}</span>
-            <span className="text-[#22D3EE]"> {data.onBoardingSection.heading[1]} </span>
+            <span className="text-[#22D3EE]">{data.onBoardingSection.heading[0]}</span>
+            <span > {data.onBoardingSection.heading[1]} </span>
           </motion.h2>
           <motion.p className="text-[#D1D5DB] text-sm lg:text-base tracking-[0.00438rem] lg:tracking-[0.005rem]" >
             {data.onBoardingSection.subheading}

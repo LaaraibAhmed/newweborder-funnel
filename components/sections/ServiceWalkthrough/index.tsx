@@ -66,14 +66,14 @@ const ServiceWalkthrough = ({data} : {data: TDictionary}) => {
         </motion.div>
         <motion.div className='flex flex-col text-center lg:text-left gap-8 flex-[0.8_1_0%]' variants={item}>
           <div className='flex flex-col gap-4'>
-            <motion.span className='bg-gradient-to-r from-[#06B6D482] to-[#06B6D4] text-sm text-transparent bg-clip-text font-medium tracking-[0.00438rem]'>{data.howItWorksSection.highlight}</motion.span>
+            <motion.span className='bg-gradient-to-r from-cyan-500 to-cyan-600 text-md text-transparent bg-clip-text font-semibold tracking-[0.00438rem]'>{data.howItWorksSection.highlight}</motion.span>
             <motion.h2 className='text-[#F3F4F6] text-xl lg:text-4xl font-bold tracking-[0.01125rem]'>{data.howItWorksSection.heading}</motion.h2>
             <motion.p className='text-[#D1D5DB] text-sm lg:text-base tracking-[0.00438rem] font-medium lg:tracking-[0.007rem]'>{data.howItWorksSection.description}</motion.p>
           </div>
           <motion.div variants={item}>
-            <a href='#our-process' >
-              <Button shape='surface'size='default'  width={123.04} >{data.howItWorksSection.buttonText}</Button>
-            </a>
+          <a href={process.env.CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer" >
+            <Button shape='filled' size='default' width={192}>{data.clientReviewsSection.buttonText}</Button>
+          </a>
           </motion.div>
         </motion.div>
       </motion.div>

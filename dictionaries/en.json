@@ -9,13 +9,10 @@
   },
   "heroSection": {
     "heading": {
-      "0": "Where ",
-      "1": "Advanced AI ",
-      "2": "& ",
-      "3": "Human Empathy ",
-      "4": "Create an Unparalleled Customer Experience"
+      "0": "Elevating Your Business with Advanced ",
+      "1": "AI and Automations"
     },
-    "subheading": "Tailored Support for Efficient, Cost-effective, Satisfying Customer Service.",
+    "subheading": "Step into an era of efficiency with our AI solutions. Intelligent automations seamlessly integrate, redefining workflows in your business.",
     "buttonText": "Schedule A Demo"
   },
   "featuresSection": {
@@ -55,11 +52,11 @@
   "analysisSection": {
     "highlight": "Insightful Control",
     "heading": {
-      "0": "Granular ",
-      "1": "Insights",
-      "2": ", Realtime Control"
+      "0": "Effortless ",
+      "1": "Efficiency",
+      "2": ", Enduring Success"
     },
-    "description": "Empower your business with Viayze's custom dashboards—an all-encompassing control center for every facet of your AI strategy. Whether tracking onboarding dynamics, monitoring customer chatbot interactions, or exploring diverse functionalities, our dashboards provide unparalleled insight and supercharge your staff.",
+    "description": "Our strategic automations redefine efficiency, requiring less effort while serving as the linchpinfor sustained success and scalable growth. Seamlessly integrated into your operations, theycreate a dynamic foundation, streamlining processes and positioning your business for futurescalability. Embrace a future where automated processes propel your business forward,simplifying complexities and fostering a path to enduring success.",
     "buttonText": "View our Pricing Plans"
   },
   "benefitsSection": {
@@ -72,7 +69,7 @@
     "cards": [
        {
         "title": "Partnership Approach",
-        "description": "Fostering Collaborative Business Relationships Beyond Just Selling"
+        "description": "Prioritizing collaboration for custom solutions aligned with your unique objectives, ensuring continued success."
       },
       {
         "title": "Cost Reduction",
@@ -90,33 +87,33 @@
   },
   "pricingSection": {
     "heading": {
-      "0": "Fixed prices based on ",
+      "0": "Pricing based on ",
       "1": "your needs"
     },
-    "subheading": "All of our packages are subject to a discovery call with the team to identify if we can help you with your project, these prices are in USD but we work with a global client base.",
+    "subheading": "For tailored solutions aligned with your objectives, a discovery call is essential. Prices listed are in USD, but it's important to note that we serve a diverse global clientele.",
     "pricingOptions": [{
         "title": "BASIC",
-        "price": "$25",
-        "description": "Perfect for passion projects & simple websites.",
+        "price": "$1,500",
+        "description": "Start with the fundamentals for immediate operational enhancement.",
         "features": [
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" }
+          { "text": "AI Audit" },
+          { "text": "Custom AI Strategy" },
+          { "text": "Basic Chatbots" },
+          { "text": "Basic Automations" },
+          { "text": "Ongoing Support" }
         ],
         "buttonText": "Get Started"
       }, {
         "title": "PRO",
         "badge": "Most Popular",
-        "price": "$250",
+        "price": "$2,000",
         "description": "Everything in Basic, plus advanced features.",
         "features": [
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" }
+          { "text": "AI Audit" },
+          { "text": "Custom AI Strategy" },
+          { "text": "Tailored Chatbots" },
+          { "text": "Workflow Automations" },
+          { "text": "Ongoing Support" }
         ],
         "buttonText": "Get Started"
       }, {
@@ -124,20 +121,20 @@
         "price": "Custom",
         "description": "For large-scale applications managing serious workloads.",
         "features": [
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" },
-          { "text": "Feature item" }
+          { "text": "AI Audit" },
+          { "text": "Custom AI Strategy" },
+          { "text": "Tailored Chatbots" },
+          { "text": "Workflow Automations" },
+          { "text": "24/7 Support" }
         ],
         "buttonText": "Contact Us"
       }
     ]
   },
   "howItWorksSection": {
-    "highlight": "Seamless Onboarding",
-    "heading": "How it Works",
-    "description": "Experience smooth onboarding with Viayze, offering tailored phone, email, and ticketing solutions for professional, secure, and cost-effective customer support that boosts your brand and business.",
+    "highlight": "Reply Instantly",
+    "heading": "Chatbot Builds",
+    "description": "Explore the transformative capabilities of our chatbots, surpassing conversation. These dynamic tools excel in lead generation, providing instant customer query responses, and seamlessly integrating data across applications. Elevate satisfaction and optimize data usage across your business ecosystem.",
     "buttonText": "Learn more"
   },
   "onBoardingSection": {
@@ -149,28 +146,28 @@
     "processes": [
       {
         "process": "Discovery",
-        "description": "Thoroughly Understand Your Specific Business Requirements"
+        "description": "Uncover business potential through KPIs and model analysis to guide understanding of unique needs."
       },
       {
         "process": "Strategy",
-        "description": "Develop a Highly Customized Support Plan Aligned with Your Goals"
+        "description": "Craft a bespoke strategy, outlining a tailored roadmap for success based on your specific requirements."
       },
       {
         "process": "Implementation",
-        "description": "Execute the Plan with Precision and Expertise"
+        "description": "Build and integrate cutting-edge solutions for seamless incorporation into your systems, driving operational efficiencies."
       },
       {
         "process": "Optimization",
-        "description": "Continuously Refine and Enhance for Peak Performance and Results"
+        "description": "Ensure ongoing success with monthly check-ins, fine-tuning custom AI solutions to align with evolving business needs."
       }
     ]
   },
   "clientReviewsSection": {
     "heading": {
-      "0": "Hear from ",
-      "1": "our clients"
+      "0": "Voices of ",
+      "1": "Success"
     },
-    "subheading": "Discover how businesses like yours have transformed with Viayze. From enhanced customer support to streamlined operations, our client testimonials and case studies showcase the real impact of our AI solutions on business success.",
+    "subheading": "Explore how businesses like yours thrive with Viayze through compelling testimonials. Gain insights into tangible benefits, fostering success through valued partnerships.",
     "reviews": [
       {
         "name": "Lyutobor Yareshko",

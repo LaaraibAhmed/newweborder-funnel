@@ -55,9 +55,7 @@ const WelcomeBanner = ({ data }: { data: TDictionary }) => {
             <h1 className="font-semibold text-[#F3F4F6] text-2xl lg:text-5xl !leading-tight tracking-[0.0075rem] lg:tracking-[0.015rem]">
               <span>{data.heroSection.heading[0]}</span>
               <span className="text-[#22D3EE]"> {data.heroSection.heading[1]} </span>
-              <span>{data.heroSection.heading[2]}</span>
-              <span className="text-[#22D3EE]"> {data.heroSection.heading[3]} </span>
-              <span>{data.heroSection.heading[4]}</span>
+
             </h1>
             <p className="text-[#D1D5DB]  text-sm lg:text-lg">
               {data.heroSection.subheading}

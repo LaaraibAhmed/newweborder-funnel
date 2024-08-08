@@ -12,6 +12,7 @@ import data from "@/dictionaries/en.json";
 import { isEmail } from "validator";
 import { toast } from "react-toastify";
 import Dropdown from "react-dropdown";
+import Example from "../DropDown";
 
 const ContactUs: React.FC = (): JSX.Element => {
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -159,40 +160,7 @@ const ContactUs: React.FC = (): JSX.Element => {
   //   // console.log("IN EMAIL JS: ", email)
   //   setEmail("");
   // };
-  const arrowClosed = (
-    <span className="arrow-closed flex items-center justify-center hover:cursor-pointer">
-      <svg
-        width="12"
-        height="8"
-        viewBox="0 0 12 8"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M1.41 0.580078L6 5.17008L10.59 0.580078L12 2.00008L6 8.00008L0 2.00008L1.41 0.580078Z"
-          fill="#706F78"
-        />
-      </svg>
-    </span>
-  );
-
-  const arrowOpen = (
-    <span className="arrow-open hover:cursor-pointer">
-      <svg
-        style={{ transform: "rotate(180deg)" }}
-        width="12"
-        height="8"
-        viewBox="0 0 12 8"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M1.41 0.580078L6 5.17008L10.59 0.580078L12 2.00008L6 8.00008L0 2.00008L1.41 0.580078Z"
-          fill="#706F78"
-        />
-      </svg>
-    </span>
-  );
+  
   return (
     <>
       <div className=" flex w-full flex-col justify-between gap-8 lg:flex-row lg:gap-16">
@@ -290,7 +258,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                 </div>
 
                 <div className="dropdown-wrapper w-full">
-                  <Dropdown
+                  {/* <Dropdown
                     className=""
                     controlClassName="dropdown-btn-container flex flex-row items-center justify-between   rounded-md border-[1px] border-[#ECEEED] p-2"
                     menuClassName="drop-menu"
@@ -300,6 +268,10 @@ const ContactUs: React.FC = (): JSX.Element => {
                     arrowOpen={arrowOpen}
                     value={projectDate}
                     onChange={handleProjectDateChange}
+                  /> */}
+                  <Example
+                    title={defaultOptionProjectDate}
+                    options={projectDate_options}
                   />
                 </div>
               </div>
@@ -307,7 +279,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                 <div className="form-heading font-orbitron w-full">Budget</div>
 
                 <div className="dropdown-wrapper w-full ">
-                  <Dropdown
+                  {/* <Dropdown
                     className="drop-menu-main"
                     controlClassName="dropdown-btn-container flex flex-row items-center justify-between   rounded-md border-[1px] border-[#ECEEED] p-2"
                     menuClassName="drop-menu"
@@ -317,6 +289,10 @@ const ContactUs: React.FC = (): JSX.Element => {
                     arrowOpen={arrowOpen}
                     value={budget}
                     onChange={handleBudgetChange}
+                  /> */}
+                  <Example
+                    title={defaultOptionBudget}
+                    options={budget_options}
                   />
                 </div>
               </div>

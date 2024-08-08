@@ -1,26 +1,23 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class', '[data-theme="dark"]'],
+  darkMode: ["class", '[data-theme="dark"]'],
   content: [
-    './node_modules/flowbite/**/*.js',
-    './node_modules/flowbite-react/**/*.js',
-    './public/**/*.html',
-    './app/**/*.{ts,tsx}',
-    'components/**/*.{ts,tsx,js,jsx}',
-    'pages/**/*.{ts,tsx,js,jsx}'
+    "./node_modules/flowbite/**/*.js",
+    "./node_modules/flowbite-react/**/*.js",
+    "./public/**/*.html",
+    "./app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx,js,jsx}",
+    "pages/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', 'Inter', 'Roboto', ...fontFamily.sans],
-        inter: ['Inter', ...fontFamily.sans],
-        roboto: ['Roboto', ...fontFamily.sans],
-      }
+        notoSans: ["var(--font-notosans)", ...fontFamily.sans],
+        orbitron: ["var(--font-orbitron)", "var(--font-notosans)"],
+      },
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ]
+  plugins: [require("flowbite/plugin")],
 };

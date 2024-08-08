@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import cn from 'classnames';
-import React, { forwardRef, useRef, ButtonHTMLAttributes } from 'react';
-import { mergeRefs } from 'react-merge-refs';
-import Loader from '@/components/widgets/Loader';
-import styles from './Button.module.css';
+import cn from "classnames";
+import React, { forwardRef, useRef, ButtonHTMLAttributes } from "react";
+import { mergeRefs } from "react-merge-refs";
+import Loader from "@/components/widgets/Loader";
+import styles from "./Button.module.css";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   active?: boolean;
   loading?: boolean;
   width?: number | string;
-  shape?: 'surface' | 'outline' | 'filled';
-  size?: 'small' | 'default';
+  shape?: "surface" | "outline" | "filled";
+  size?: "small" | "default";
   Component?: React.ComponentType;
 }
 
@@ -26,7 +26,7 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
     shape,
     size,
     style = {},
-    Component = 'button',
+    Component = "button",
     ...rest
   } = props;
 
@@ -40,7 +40,7 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
       [styles.loading]: loading,
       [styles.disabled]: disabled,
     },
-    className
+    className,
   );
 
   return (
@@ -52,14 +52,14 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
       className={`${rootClassName}`}
       disabled={disabled}
       style={{
-        width: width ? width : 'auto',
+        width: width ? width : "auto",
         ...style,
       }}
       {...rest}
     >
       {children}
       {loading && (
-        <i className="flex pl-2 m-0 ">
+        <i className="m-0 flex pl-2 ">
           <Loader />
         </i>
       )}
@@ -67,6 +67,6 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
   );
 });
 
-Button.displayName = 'Button';
+Button.displayName = "Button";
 
 export default Button;

@@ -67,7 +67,7 @@
     },
     "subheading": "More than just solutions, we're your partner in success.",
     "cards": [
-       {
+      {
         "title": "Partnership Approach",
         "description": "Prioritizing collaboration for custom solutions aligned with your unique objectives, ensuring continued success."
       },
@@ -91,7 +91,8 @@
       "1": "your needs"
     },
     "subheading": "For tailored solutions aligned with your objectives, a discovery call is essential. Prices listed are in USD, but it's important to note that we serve a diverse global clientele.",
-    "pricingOptions": [{
+    "pricingOptions": [
+      {
         "title": "BASIC",
         "price": "$1,500",
         "description": "Start with the fundamentals for immediate operational enhancement.",
@@ -103,7 +104,8 @@
           { "text": "Ongoing Support" }
         ],
         "buttonText": "Get Started"
-      }, {
+      },
+      {
         "title": "PRO",
         "badge": "Most Popular",
         "price": "$2,000",
@@ -116,7 +118,8 @@
           { "text": "Ongoing Support" }
         ],
         "buttonText": "Get Started"
-      }, {
+      },
+      {
         "title": "ENTERPRISE",
         "price": "Custom",
         "description": "For large-scale applications managing serious workloads.",
@@ -239,11 +242,17 @@
       "emailAddress": "management@viayze.com"
     },
     "SocialMediaLinks": [
-      {"name": "instagram", "href": "https://www.instagram.com/viayze"},
-      {"name": "twitter", "href": "https://twitter.com/viayze"},
-      {"name": "facebook", "href": "/"},
-      {"name": "linkedin", "href": "/"},
-      {"name": "youtube", "href": "/"}
+      {
+        "name": "instagram",
+        "href": "https://instagram.com/newweborderltd?igshid=NTc4MTIwNjQ2YQ=="
+      },
+      { "name": "twitter", "href": "https://twitter.com/New_Web_Order" },
+      { "name": "facebook", "href": "https://www.facebook.com/NewWebOrder1" },
+      {
+        "name": "linkedin",
+        "href": "https://www.linkedin.com/company/96434846/"
+      },
+      { "name": "youtube", "href": "/" }
     ],
     "subscriptionNotice": {
       "callToAction": "Subscribe for the latest news and updates.",
@@ -257,9 +266,7 @@
     }
   },
   "footerSection": {
-    "links": [
-      {"name": "Back to Top", "href": "#top"}
-    ],
+    "links": [{ "name": "Back to Top", "href": "#top" }],
     "copyRight": "© 2023 by VIAYZE."
   }
 }

@@ -2,7 +2,7 @@
   height: 576px;
 }
 
-.video_player > div > div > iframe html > body > div > div  {
+.video_player > div > div > iframe html > body > div > div {
   display: none;
 }
 
@@ -48,11 +48,6 @@
 .skeleton_shimmer {
   border-radius: 16px;
   animation: shimmer 5s linear infinite;
-  background: linear-gradient(
-    -45deg, 
-    #0B161A 25%, 
-    #13262d 40%, 
-    #0B161A 75%
-  );
+  background: linear-gradient(-45deg, #0b1a10 25%, #132d16 40%, #0b1a0e 75%);
   background-size: 200% 100%;
 }

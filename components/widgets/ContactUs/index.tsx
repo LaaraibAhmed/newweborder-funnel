@@ -13,11 +13,13 @@ import { isEmail } from "validator";
 import { toast } from "react-toastify";
 import Dropdown from "react-dropdown";
 import Example from "../DropDown";
+import MyModal from "../Dialog";
 
 const ContactUs: React.FC = (): JSX.Element => {
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const [mailSuccess, setMailSuccess] = useState("");
 
   if (!serviceId || !templateId || !publicKey) {
     console.error(
@@ -88,16 +90,16 @@ const ContactUs: React.FC = (): JSX.Element => {
       budget !== "" &&
       description !== ""
     ) {
-      toast.success("Form submitted successfully.", {
-        position: "bottom-right",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        // theme: "dark",
-      });
+      // toast.success("Form submitted successfully.", {
+      //   position: "bottom-right",
+      //   autoClose: 3000,
+      //   hideProgressBar: true,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   // theme: "dark",
+      // });
 
       var templateParams = {
         from_name: fullName,
@@ -160,9 +162,10 @@ const ContactUs: React.FC = (): JSX.Element => {
   //   // console.log("IN EMAIL JS: ", email)
   //   setEmail("");
   // };
-  
+
   return (
     <>
+      {/* <MyModal /> */}
       <div className=" flex w-full flex-col justify-between gap-8 lg:flex-row lg:gap-16">
         <div className="flex flex-col justify-center gap-8">
           <div onClick={() => router.push("/")}>
@@ -272,6 +275,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                   <Example
                     title={defaultOptionProjectDate}
                     options={projectDate_options}
+                    onchange={handleProjectDateChange}
                   />
                 </div>
               </div>
@@ -293,6 +297,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                   <Example
                     title={defaultOptionBudget}
                     options={budget_options}
+                    onchange={handleBudgetChange}
                   />
                 </div>
               </div>

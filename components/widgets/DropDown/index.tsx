@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 interface Props {
   title: string;
   options: string[];
+  onchange: (event: any) => void;
 }
 
 const Example = (props: Props) => {
@@ -43,19 +44,28 @@ const Example = (props: Props) => {
     </span>
   );
 
+  const [title, setTitle] = useState(props.title);
+
   return (
-    <Menu>
-      <MenuButton
-        className={`flex w-full flex-row items-center justify-between rounded-md border-[1px] border-[#ECEEED] p-2`}
-      >
-        {props.title}
+    <Menu as="div" className="relative">
+      <MenuButton className="flex w-full flex-row items-center justify-between rounded-md border-[1px] border-gray-600 p-2">
+        {title}
+        <MenuItems>{({ open }) => (open ? arrowOpen : arrowClosed)}</MenuItems>
       </MenuButton>
-      <MenuItems anchor="bottom">
+      <MenuItems className="absolute right-0 z-50 mt-2 w-full rounded-md border border-gray-600 shadow-lg">
         {props.options.map((option, index) => (
           <MenuItem key={index}>
-            <a className="block data-[focus]:bg-blue-100" href={option}>
-              {option}
-            </a>
+            {({ active }) => (
+              <button
+                className={`block w-full px-4 py-2 text-left ${active ? "bg-[#083815] text-white" : "bg-[#141716] text-white"}`}
+                onClick={() => {
+                  props.onchange(option);
+                  setTitle(option);
+                }}
+              >
+                {option}
+              </button>
+            )}
           </MenuItem>
         ))}
       </MenuItems>

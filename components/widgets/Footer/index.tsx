@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className="flex flex-1 justify-center">
           <p className="text-sm ">
-            Realised by
+            Made by
             <a
               href="https://www.newweborder.co/"
               target="_blank"
